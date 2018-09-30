@@ -8,7 +8,6 @@ public class EncryptDecryptValueTest {
 
 	@Test
 	public final void testMain() {
-		//fail("Not yet implemented");
 		EncryptDecryptValue test1 = new EncryptDecryptValue();
 		test1.decodeTheValue("inAm");
 	}
