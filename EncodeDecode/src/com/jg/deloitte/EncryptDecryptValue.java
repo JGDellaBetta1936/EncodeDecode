@@ -8,6 +8,7 @@ public class EncryptDecryptValue {
 	public String encodeTheValue(String inputValue) {
 		log.info("Input value->" + inputValue);
 		StringBuilder sb = new StringBuilder();
+		System.getProperty("EncodedValue", "");
 		String firstPart = null;
 		String secondPart = null;
 		// determine odd or even length
@@ -25,7 +26,8 @@ public class EncryptDecryptValue {
 			sb.append(secondPart);
 			sb.append("#");
 		}
-
+		System.setProperty("EncodedValue", sb.toString());
+		System.out.println("Set system property.");
 		return sb.toString();
 	}
 
